@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retro Car Stereo Radio Player</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="radio-container">
+        <div class="display" id="station-info">
+            <p id="station-info-text">Loading...</p>
+            
+            <!-- Volume Control Inside Display -->
+            <div class="volume-control">
+                <label for="volume-slider">Vol</label>
+                <input type="range" id="volume-slider" min="0" max="1" step="0.01" value="0.5">
+            </div>
+        </div>
+        
+        <div class="controls">
+            <button id="power" class="control-button">Power</button>
+            <button id="prev" class="control-button">⏮</button>
+            <button id="play-pause" class="control-button">▶️/⏸</button>
+            <button id="next" class="control-button">⏭</button>
+        </div>
+
+        <div class="presets">
+            <button class="preset-button" data-station="https://radio.jameshacker.com/listen/zero/listen">93.5</button>
+            <button class="preset-button" data-station="https://example.com/station2">2</button>
+            <button class="preset-button" data-station="https://example.com/station3">3</button>
+            <button class="preset-button" data-station="https://example.com/station4">4</button>
+            <button class="preset-button" data-station="https://example.com/station5">5</button>
+            <button class="preset-button" data-station="https://example.com/station6">6</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
